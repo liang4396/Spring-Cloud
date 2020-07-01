@@ -5,9 +5,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
 
+import javax.annotation.Resource;
+
 /**
  * @author llp
- * @date 2020/6/30 13:54
+ * @date 2020/7/1 17:10
  */
 @Configuration
 public class ApplicationContextConfig {
@@ -17,3 +19,4 @@ public class ApplicationContextConfig {
         return new RestTemplate();
     }
 }
+
