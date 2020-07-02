@@ -64,4 +64,9 @@ public class PatmentController {
         }
         return discoveryClient;
     }
+
+    @GetMapping("/payment/lb")
+    public String getPaymentlb() {
+        return serverPort;
+    }
 }
