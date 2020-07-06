@@ -12,4 +12,17 @@ eureka:
       defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
     register-with-eureka: false
     fetch-registry: true
+ribbon:
+  ReadTimeout: 5000
+
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
 
