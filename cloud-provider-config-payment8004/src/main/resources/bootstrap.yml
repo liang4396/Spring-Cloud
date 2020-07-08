@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    config: #config客户端配置
+      label: master   #分支名称
+      name: paymentconfig  #配置文件名称
+      profile: dev  #读取文件后缀 上述3个综合：master分支上config-dev.yml的配置文件被读取
+      #http://config-3344/master/config-dev.yml
+      uri: http://localhost:3344  #配置中心地址
+
+management: #暴露监控端口
+  endpoint:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
