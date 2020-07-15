@@ -15,6 +15,6 @@ public class CustomerBlockHandler {
 
     public static CommonResult handleException2(BlockException exception) {
         return new CommonResult(444,
-                "按照客户自定义的Global---2号，handleException");
+                "按照客户自定义的Global----2号，handleException");
     }
 }
